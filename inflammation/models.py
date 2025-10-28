@@ -2,15 +2,15 @@
 
 The Model layer is responsible for the 'business logic' part of the software.
 
-Patients' data is held in an inflammation table (2d array) where each row contains 
-inflammation data for a single patient taken over a number of days 
+Patients' data is held in an inflammation table (2d array) where each row contains
+inflammation data for a single patient taken over a number of days
 and each column represents a single day across all patients.
 """
 
 import numpy as np
 
 
-def load_csv(filename):  
+def load_csv(filename):
     """Load a Numpy array from a CSV
 
     :param filename: Filename of CSV to load
@@ -20,7 +20,7 @@ def load_csv(filename):
 
 def daily_mean(data):
     """Calculate the daily mean of a 2d inflammation data array.
-    
+
     :param data: A 2d numpy array containing inflammation data (each row is a patient)
     :return: A 1d numpy array containing the mean inflammation per day
     """
@@ -29,7 +29,7 @@ def daily_mean(data):
 
 def daily_max(data):
     """Calculate the daily max of a 2d inflammation data array.
-    
+
     :param data: A 2d numpy array containing inflammation data
     :return: A 1d numpy array containing the max inflammation per day
     """
@@ -38,7 +38,7 @@ def daily_max(data):
 
 def daily_min(data):
     """Calculate the daily min of a 2d inflammation data array.
-    
+
     :param data: A 2d numpy array containing inflammation data
     :return: A 1d numpy array containing the min inflammation per day
     """
